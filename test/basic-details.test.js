@@ -33,7 +33,6 @@ describe('BasicDetails Component', () => {
   it('calls inWords() and updates #word div on keyup', () => {
     const amountInput = element.shadowRoot.querySelector('.amount');
     const wordDiv = element.shadowRoot.querySelector('#word');
-
     amountInput.value = '15000';
     element._numToWord();
 

@@ -37,7 +37,6 @@ describe('<loan-error>', () => {
     const button = element.shadowRoot.querySelector('lion-button.home-btn');
     button.click();
     await element.updateComplete;
-
     expect(routerStub.calledOnceWith('/')).to.be.true;
   });
 

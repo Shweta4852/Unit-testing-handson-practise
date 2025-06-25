@@ -14,11 +14,13 @@ describe('LoanApplication Component', () => {
     expect(element).to.exist;
   });
 
+  //Set default title and Counter
   it('should have default title and counter', () => {
     expect(element.title).to.equal('Hey there');
     expect(element.counter).to.equal(5);
   });
 
+  //render dashboard component
   it('should render a <dash-board> component', () => {
     const dashboard = element.shadowRoot.querySelector('dash-board');
     expect(dashboard).to.exist;
@@ -36,5 +38,3 @@ describe('LoanApplication Component', () => {
     expect(element.counter).to.equal(15);
   });
 });
-
-

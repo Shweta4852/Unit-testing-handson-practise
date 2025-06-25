@@ -14,7 +14,6 @@ describe('CustomerDetails Component', () => {
   it('renders form and input fields', () => {
     const form = element.shadowRoot.querySelector('lion-form');
     expect(form).to.exist;
-
     expect(element.shadowRoot.querySelector('lion-input[name="first_name"]')).to.exist;
     expect(element.shadowRoot.querySelector('lion-input[name="last_name"]')).to.exist;
     expect(element.shadowRoot.querySelector('lion-input-email[name="email"]')).to.exist;

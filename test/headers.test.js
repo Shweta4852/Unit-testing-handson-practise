@@ -13,11 +13,9 @@ describe('Header Component', () => {
 
   it('renders heading and buttons correctly', () => {
     const shadow = element.shadowRoot;
-
     const heading = shadow.querySelector('p');
     const enBtn = shadow.querySelector('#en-GB');
     const nlBtn = shadow.querySelector('#nl-NL');
-
     expect(heading).to.exist;
     expect(enBtn).to.exist;
     expect(nlBtn).to.exist;

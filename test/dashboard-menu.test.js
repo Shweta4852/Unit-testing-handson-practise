@@ -29,7 +29,6 @@ describe('<dashboard-menu>', () => {
   it('renders with correct image and title', () => {
     const img = element.shadowRoot.querySelector('img');
     const title = element.shadowRoot.querySelector('h4');
-
     expect(img).to.exist;
     expect(img.src).to.include('https://example.com/image.jpg');
     expect(title.textContent).to.equal('Personal Loan');
@@ -38,9 +37,7 @@ describe('<dashboard-menu>', () => {
   it('sets localStorage and navigates when button is clicked', async () => {
     const button = element.shadowRoot.querySelector('button');
     button.click();
-
     await element.updateComplete;
-
     expect(localStorageStub.calledOnceWith('type', 'Personal Loan')).to.be.true;
     expect(routerStub.calledOnceWith('/details')).to.be.true;
   });
